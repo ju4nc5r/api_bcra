@@ -1,0 +1,272 @@
+{
+	"info": {
+		"_postman_id": "af45ad1f-6c78-4917-b456-312a5ca5987c",
+		"name": "API BCRA",
+		"description": "Token valido hasta 2025-06-02 21:51:13\n\n100 consultas diarias",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30675416",
+		"_collection_link": "https://easyhouse.postman.co/workspace/EH-Workspace~02aeb05b-0a50-4cd6-820c-6a036149818b/collection/30675416-af45ad1f-6c78-4917-b456-312a5ca5987c?action=share&source=collection_link&creator=30675416"
+	},
+	"item": [
+		{
+			"name": "baseMonetaria",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token\n}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://api.estadisticasbcra.com/base",
+					"protocol": "http",
+					"host": [
+						"api",
+						"estadisticasbcra",
+						"com"
+					],
+					"path": [
+						"base"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CotizaciónHistoricaUSD",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token\n}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://api.estadisticasbcra.com/usd_of",
+					"protocol": "http",
+					"host": [
+						"api",
+						"estadisticasbcra",
+						"com"
+					],
+					"path": [
+						"usd_of"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PrincipalesVariables",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.bcra.gob.ar/estadisticas/v2.0/PrincipalesVariables",
+					"protocol": "https",
+					"host": [
+						"api",
+						"bcra",
+						"gob",
+						"ar"
+					],
+					"path": [
+						"estadisticas",
+						"v2.0",
+						"PrincipalesVariables"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CER",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.bcra.gob.ar/estadisticas/v2.0/DatosVariable/30/2023-05-31/2024-05-31",
+					"protocol": "https",
+					"host": [
+						"api",
+						"bcra",
+						"gob",
+						"ar"
+					],
+					"path": [
+						"estadisticas",
+						"v2.0",
+						"DatosVariable",
+						"30",
+						"2023-05-31",
+						"2024-05-31"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UVA",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.bcra.gob.ar/estadisticas/v2.0/DatosVariable/31/2023-05-31/2024-05-31",
+					"protocol": "https",
+					"host": [
+						"api",
+						"bcra",
+						"gob",
+						"ar"
+					],
+					"path": [
+						"estadisticas",
+						"v2.0",
+						"DatosVariable",
+						"31",
+						"2023-05-31",
+						"2024-05-31"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Inflacion mensual",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.bcra.gob.ar/estadisticas/v2.0/DatosVariable/27/2023-05-01/2024-05-01",
+					"protocol": "https",
+					"host": [
+						"api",
+						"bcra",
+						"gob",
+						"ar"
+					],
+					"path": [
+						"estadisticas",
+						"v2.0",
+						"DatosVariable",
+						"27",
+						"2023-05-01",
+						"2024-05-01"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Inflacion esperada",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.bcra.gob.ar/estadisticas/v2.0/DatosVariable/29/2023-05-01/2024-05-01",
+					"protocol": "https",
+					"host": [
+						"api",
+						"bcra",
+						"gob",
+						"ar"
+					],
+					"path": [
+						"estadisticas",
+						"v2.0",
+						"DatosVariable",
+						"29",
+						"2023-05-01",
+						"2024-05-01"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Inflacion interanual",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.bcra.gob.ar/estadisticas/v2.0/DatosVariable/28/2023-05-01/2024-05-01",
+					"protocol": "https",
+					"host": [
+						"api",
+						"bcra",
+						"gob",
+						"ar"
+					],
+					"path": [
+						"estadisticas",
+						"v2.0",
+						"DatosVariable",
+						"28",
+						"2023-05-01",
+						"2024-05-01"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "token\n",
+			"value": "token",
+			"type": "string"
+		}
+	]
+}
