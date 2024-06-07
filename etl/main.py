@@ -1,16 +1,16 @@
 from etl.data_load import Extract
 import pandas as pd
-
-# URL's
-url_varPrincipales = "https://api.bcra.gob.ar/estadisticas/v2.0/PrincipalesVariables"
-url_base = "https://api.bcra.gob.ar/estadisticas/v2.0/DatosVariable"
-endpoints = {"CER": '30/2016-05-31/2024-05-31',
-             "UVA": '31/2016-05-31/2024-05-31'}
+from src.parameters import BCRA
 
 extract = Extract()
-for k in endpoints.keys():
-    path = f"datalake/bronze/{k}/data.csv"
-    data = extract.get_data(url_base, endpoints[k])
+
+bcra = BCRA()
+url_base, endpoints = bcra.api_bcra()
+
+
+for var in endpoints:
+    path = f"datalake/bronze/{var[0]}/{var[0]}.csv"
+    data = extract.get_data(url_base, var[1])
     extract.save_to_csv(data, path)
 
 
