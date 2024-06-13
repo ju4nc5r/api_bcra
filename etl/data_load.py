@@ -24,14 +24,15 @@ class Extract:
             try:
                 json_data = response.json()
                 df = pd.json_normalize(json_data, record_path='results')
+                self.fail = True
             except:
                 print("Formato de response inesperado")
                 return None
             return df
 
         except requests.exceptions.RequestException as err:
+            self.fail = False
             print(f"La peticion ha fallado. Codigo de error: {err}")
-            return None
 
     def save_to_csv(self, df, output_path, partition_cols=None):
         """
@@ -45,5 +46,6 @@ class Extract:
         if directory and not os.path.exists(directory):
             os.makedirs(directory)
 
-        df.to_csv(output_path)
+        if self.fail:
+            df.to_csv(output_path)
 

@@ -5,7 +5,7 @@ from src.parameters import BCRA
 extract = Extract()
 
 bcra = BCRA()
-url_base, endpoints = bcra.api_bcra(2017, 2025)
+url_base, endpoints = bcra.api_bcra(2004, 2025)
 
 
 for i in range(len(endpoints)):
