@@ -34,6 +34,8 @@ class Extract:
             self.fail = False
             print(f"La peticion ha fallado. Codigo de error: {err}")
 
+
+class Load:
     def save_to_csv(self, df, output_path, partition_cols=None):
         """
         Parametros:
@@ -46,6 +48,6 @@ class Extract:
         if directory and not os.path.exists(directory):
             os.makedirs(directory)
 
-        if self.fail:
+        if not df.empty:
             df.to_csv(output_path)
 
