@@ -52,3 +52,8 @@ Ideas:
     Se calcula dividiendo el activo corriente (AC) o a corto plazo, aquel que se puede
     convertir en dinero en efectivo en menos de un año, entre el pasivo corriente (PC) o
     a corto plazo, con las deudas con vencimiento inferior al año.
+
+
+Primeros pasos:
+
+1. 

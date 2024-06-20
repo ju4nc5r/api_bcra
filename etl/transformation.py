@@ -6,7 +6,7 @@ class Transform:
     def history_creator(self, root_directory):
         paths = os.listdir(root_directory)
         for path in paths:
-            new_path = root_directory + f'\{path}'
+            new_path = root_directory + f'/{path}'
             filenames = os.listdir(new_path)
             data_frames = []
 
@@ -21,6 +21,5 @@ class Transform:
                 combined_df = pd.concat(data_frames, ignore_index=True) # Concatenar todos los DataFrames en uno solo
                 combined_csv_path = f'{new_path}/history.csv' # Guardar el DataFrame combinado en un nuevo archivo CSV
                 combined_df.to_csv(combined_csv_path, index=False)
-                return combined_df
 
         return None
