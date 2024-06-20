@@ -1,0 +1,477 @@
+{
+	"info": {
+		"_postman_id": "9749a2dd-2123-4bcc-8fb5-670d3316e805",
+		"name": "BYMA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30675416",
+		"_collection_link": "https://easyhouse.postman.co/workspace/EH-Workspace~02aeb05b-0a50-4cd6-820c-6a036149818b/collection/30675416-9749a2dd-2123-4bcc-8fb5-670d3316e805?action=share&source=collection_link&creator=30675416"
+	},
+	"item": [
+		{
+			"name": "Renta Variable",
+			"item": [
+				{
+					"name": "Cedears",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Referer-Policy",
+								"value": "no-referrer-when-downgrade",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://open.bymadata.com.ar/vanoms-be-core/rest/api/bymadata/free/cedears",
+							"protocol": "https",
+							"host": [
+								"open",
+								"bymadata",
+								"com",
+								"ar"
+							],
+							"path": [
+								"vanoms-be-core",
+								"rest",
+								"api",
+								"bymadata",
+								"free",
+								"cedears"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ETF's",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://open.bymadata.com.ar/vanoms-be-core/rest/api/bymadata/free/etf",
+							"protocol": "https",
+							"host": [
+								"open",
+								"bymadata",
+								"com",
+								"ar"
+							],
+							"path": [
+								"vanoms-be-core",
+								"rest",
+								"api",
+								"bymadata",
+								"free",
+								"etf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Acciones Locales",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://open.bymadata.com.ar/vanoms-be-core/rest/api/bymadata/free/leading-equity",
+							"protocol": "https",
+							"host": [
+								"open",
+								"bymadata",
+								"com",
+								"ar"
+							],
+							"path": [
+								"vanoms-be-core",
+								"rest",
+								"api",
+								"bymadata",
+								"free",
+								"leading-equity"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Acciones Generales",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Referrer-Policy",
+								"value": "no-referrer-when-downgrade",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://open.bymadata.com.ar/vanoms-be-core/rest/api/bymadata/free/general-equity?verify=False",
+							"protocol": "https",
+							"host": [
+								"open",
+								"bymadata",
+								"com",
+								"ar"
+							],
+							"path": [
+								"vanoms-be-core",
+								"rest",
+								"api",
+								"bymadata",
+								"free",
+								"general-equity"
+							],
+							"query": [
+								{
+									"key": "verify",
+									"value": "False"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Indices",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Referrer-Policy",
+								"value": "no-referrer-when-downgrade",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://open.bymadata.com.ar/vanoms-be-core/rest/api/bymadata/free/index-price",
+							"protocol": "https",
+							"host": [
+								"open",
+								"bymadata",
+								"com",
+								"ar"
+							],
+							"path": [
+								"vanoms-be-core",
+								"rest",
+								"api",
+								"bymadata",
+								"free",
+								"index-price"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Renta Fija",
+			"item": [
+				{
+					"name": "Titulos",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Referer-Policy",
+								"value": "no-referrer-when-downgrade",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://open.bymadata.com.ar/vanoms-be-core/rest/api/bymadata/free/cedears?verify=False",
+							"protocol": "https",
+							"host": [
+								"open",
+								"bymadata",
+								"com",
+								"ar"
+							],
+							"path": [
+								"vanoms-be-core",
+								"rest",
+								"api",
+								"bymadata",
+								"free",
+								"cedears"
+							],
+							"query": [
+								{
+									"key": "verify",
+									"value": "False"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ON",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Referer-Policy",
+								"value": "no-referrer-when-downgrade",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://open.bymadata.com.ar/vanoms-be-core/rest/api/bymadata/free/negociable-obligations?verify=False",
+							"protocol": "https",
+							"host": [
+								"open",
+								"bymadata",
+								"com",
+								"ar"
+							],
+							"path": [
+								"vanoms-be-core",
+								"rest",
+								"api",
+								"bymadata",
+								"free",
+								"negociable-obligations"
+							],
+							"query": [
+								{
+									"key": "verify",
+									"value": "False"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Información",
+			"item": [
+				{
+					"name": "Emisoras y Valores Negociables",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Referer-Policy",
+								"value": "no-referrer-when-downgrade",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://open.bymadata.com.ar/vanoms-be-core/rest/api/bymadata/free/bnown/relevant-facts",
+							"protocol": "https",
+							"host": [
+								"open",
+								"bymadata",
+								"com",
+								"ar"
+							],
+							"path": [
+								"vanoms-be-core",
+								"rest",
+								"api",
+								"bymadata",
+								"free",
+								"bnown",
+								"relevant-facts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Avisos de BYMA",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Referer-Policy",
+								"value": "no-referrer-when-downgrade",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://open.bymadata.com.ar/vanoms-be-core/rest/api/bymadata/free/bnown/byma-ads",
+							"protocol": "https",
+							"host": [
+								"open",
+								"bymadata",
+								"com",
+								"ar"
+							],
+							"path": [
+								"vanoms-be-core",
+								"rest",
+								"api",
+								"bymadata",
+								"free",
+								"bnown",
+								"byma-ads"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
