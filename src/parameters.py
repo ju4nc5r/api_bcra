@@ -60,3 +60,17 @@ class BCRA:
 
         return url_base, res
 
+class BYMA:
+
+    def api_byma(self):
+        url_base = f'https://open.bymadata.com.ar/vanoms-be-core/rest/api/bymadata/free'
+        endpoints = create_list(
+                     cedear='cedears',
+                     etf='etf',
+                     acciones_locales='leading-equity',
+                     acciones_globales='general-equity',
+                     indices_byma='index-price',
+                     titulos_publicos='public-bonds')
+
+        return url_base, endpoints
+

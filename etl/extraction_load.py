@@ -33,6 +33,28 @@ class Extract:
             print(f"La peticion ha fallado. Codigo de error: {err}")
 
 
+    def get_data_byma(self, base_url, endpoint):
+        data = {}
+        headers = {
+            "Content-Type": "application/json",
+            "Referer-Policy": "no-referrer-when-downgrade",
+        }
+        try:
+            endpoint_url = f'{base_url}/{endpoint}'
+            response = requests.post(endpoint_url, json=data, headers=headers, verify=False)
+
+            try:
+                json_data = response.json()
+                df = pd.json_normalize(json_data, record_path='data')
+            except:
+                print("Formato de response inesperado")
+                return None
+            return df
+
+        except requests.exceptions.RequestException as err:
+            print(f"La peticion ha fallado. Codigo de error: {err}")
+
+
 class Load:
     def save_to_csv(self, df, output_path, partition_cols=None):
         """

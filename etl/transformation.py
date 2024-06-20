@@ -22,4 +22,3 @@ class Transform:
                 combined_csv_path = f'{new_path}/history.csv' # Guardar el DataFrame combinado en un nuevo archivo CSV
                 combined_df.to_csv(combined_csv_path, index=False)
 
-        return None
