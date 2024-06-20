@@ -6,7 +6,7 @@ class Transform:
     def history_creator(self, root_directory):
         paths = os.listdir(root_directory)
         for path in paths:
-            new_path = root_directory + fr'\{path}'
+            new_path = root_directory + f'\{path}'
             filenames = os.listdir(new_path)
             data_frames = []
 

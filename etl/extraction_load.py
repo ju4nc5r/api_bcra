@@ -24,14 +24,12 @@ class Extract:
             try:
                 json_data = response.json()
                 df = pd.json_normalize(json_data, record_path='results')
-                self.fail = True
             except:
                 print("Formato de response inesperado")
                 return None
             return df
 
         except requests.exceptions.RequestException as err:
-            self.fail = False
             print(f"La peticion ha fallado. Codigo de error: {err}")
 
 
@@ -48,6 +46,6 @@ class Load:
         if directory and not os.path.exists(directory):
             os.makedirs(directory)
 
-        if not df.empty:
+        if df is not None:
             df.to_csv(output_path)
 
