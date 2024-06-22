@@ -1,0 +1,1021 @@
+{
+	"info": {
+		"_postman_id": "590244ed-2b89-4387-ae69-2fee2cfd923f",
+		"name": "FinancialModelingPrep",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30029120"
+	},
+	"item": [
+		{
+			"name": "Noticias",
+			"item": [
+				{
+					"name": "NoticiasFMP",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://financialmodelingprep.com/api/v3/fmp/articles?page=0&size=5&apikey={{apikey}}",
+							"protocol": "https",
+							"host": [
+								"financialmodelingprep",
+								"com"
+							],
+							"path": [
+								"api",
+								"v3",
+								"fmp",
+								"articles"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "5"
+								},
+								{
+									"key": "apikey",
+									"value": "{{apikey}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PanoramaGeneraldelMercado",
+			"item": [
+				{
+					"name": "GanadoresDiarios",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://financialmodelingprep.com/api/v3/stock_market/gainers?apikey={{apikey}}",
+							"protocol": "https",
+							"host": [
+								"financialmodelingprep",
+								"com"
+							],
+							"path": [
+								"api",
+								"v3",
+								"stock_market",
+								"gainers"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PerdedoresDiarios",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{apikey}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://financialmodelingprep.com/api/v3/stock_market/losers?apikey={{apikey}}",
+							"protocol": "https",
+							"host": [
+								"financialmodelingprep",
+								"com"
+							],
+							"path": [
+								"api",
+								"v3",
+								"stock_market",
+								"losers"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "BusquedadeEmpresas",
+			"item": [
+				{
+					"name": "BusquedadeEmpresa",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://financialmodelingprep.com/api/v3/search?query=AAPL&apikey={{apikey}}",
+							"protocol": "https",
+							"host": [
+								"financialmodelingprep",
+								"com"
+							],
+							"path": [
+								"api",
+								"v3",
+								"search"
+							],
+							"query": [
+								{
+									"key": "query",
+									"value": "AAPL"
+								},
+								{
+									"key": "apikey",
+									"value": "{{apikey}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "NombreABuscar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://financialmodelingprep.com/api/v3/search-name?query=AWS&limit=1&exchange=NASDAQ&apikey={{apikey}}",
+							"protocol": "https",
+							"host": [
+								"financialmodelingprep",
+								"com"
+							],
+							"path": [
+								"api",
+								"v3",
+								"search-name"
+							],
+							"query": [
+								{
+									"key": "query",
+									"value": "AWS"
+								},
+								{
+									"key": "limit",
+									"value": "1"
+								},
+								{
+									"key": "exchange",
+									"value": "NASDAQ"
+								},
+								{
+									"key": "apikey",
+									"value": "{{apikey}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EstadoFinanciero",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://financialmodelingprep.com/api/v3/income-statement/MSFT?apikey={{apikey}}",
+							"protocol": "https",
+							"host": [
+								"financialmodelingprep",
+								"com"
+							],
+							"path": [
+								"api",
+								"v3",
+								"income-statement",
+								"MSFT"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "HojadeBalance",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://financialmodelingprep.com/api/v3/balance-sheet-statement/AAPL?apikey={{apikey}}",
+							"protocol": "https",
+							"host": [
+								"financialmodelingprep",
+								"com"
+							],
+							"path": [
+								"api",
+								"v3",
+								"balance-sheet-statement",
+								"AAPL"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeclaracionesdeTesoreria",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://financialmodelingprep.com/api/v3/cash-flow-statement/AAPL?period=anual&apikey={{apikey}}",
+							"protocol": "https",
+							"host": [
+								"financialmodelingprep",
+								"com"
+							],
+							"path": [
+								"api",
+								"v3",
+								"cash-flow-statement",
+								"AAPL"
+							],
+							"query": [
+								{
+									"key": "period",
+									"value": "anual"
+								},
+								{
+									"key": "apikey",
+									"value": "{{apikey}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeclaraciondeIngresos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://financialmodelingprep.com/api/v3/income-statement-as-reported/MSFT?period=anual&limit=50&apikey={{apikey}}",
+							"protocol": "https",
+							"host": [
+								"financialmodelingprep",
+								"com"
+							],
+							"path": [
+								"api",
+								"v3",
+								"income-statement-as-reported",
+								"MSFT"
+							],
+							"query": [
+								{
+									"key": "period",
+									"value": "anual"
+								},
+								{
+									"key": "limit",
+									"value": "50"
+								},
+								{
+									"key": "apikey",
+									"value": "{{apikey}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "IdentificarLaIndustria",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://financialmodelingprep.com/api/v4/standard_industrial_classification?symbol=AAPL&apikey={{apikey}}",
+							"protocol": "https",
+							"host": [
+								"financialmodelingprep",
+								"com"
+							],
+							"path": [
+								"api",
+								"v4",
+								"standard_industrial_classification"
+							],
+							"query": [
+								{
+									"key": "symbol",
+									"value": "AAPL"
+								},
+								{
+									"key": "apikey",
+									"value": "{{apikey}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RatiosCopy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Acciones",
+			"item": [
+				{
+					"name": "ListadeAcciones",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://financialmodelingprep.com/api/v3/stock/list?apikey={{apikey}}",
+							"protocol": "https",
+							"host": [
+								"financialmodelingprep",
+								"com"
+							],
+							"path": [
+								"api",
+								"v3",
+								"stock",
+								"list"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListaCIK",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://financialmodelingprep.com/api/v3/cik_list?apikey={{apikey}}",
+							"protocol": "https",
+							"host": [
+								"financialmodelingprep",
+								"com"
+							],
+							"path": [
+								"api",
+								"v3",
+								"cik_list"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListadeETF's",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://financialmodelingprep.com/api/v3/etf/list?apikey={{apikey}}",
+							"protocol": "https",
+							"host": [
+								"financialmodelingprep",
+								"com"
+							],
+							"path": [
+								"api",
+								"v3",
+								"etf",
+								"list"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AccionConMayorVolumen",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://financialmodelingprep.com/api/v3/stock_market/actives?apikey={{apikey}}",
+							"protocol": "https",
+							"host": [
+								"financialmodelingprep",
+								"com"
+							],
+							"path": [
+								"api",
+								"v3",
+								"stock_market",
+								"actives"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PreciosEnRealTimeFull",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://financialmodelingprep.com/api/v3/stock/full/real-time-price?apikey={{apikey}}",
+							"protocol": "https",
+							"host": [
+								"financialmodelingprep",
+								"com"
+							],
+							"path": [
+								"api",
+								"v3",
+								"stock",
+								"full",
+								"real-time-price"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PreciosEnRealTime",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://financialmodelingprep.com/api/v3/stock/real-time-price/AAPL?apikey={{apikey}}",
+							"protocol": "https",
+							"host": [
+								"financialmodelingprep",
+								"com"
+							],
+							"path": [
+								"api",
+								"v3",
+								"stock",
+								"real-time-price",
+								"AAPL"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CambiodePrecio",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://financialmodelingprep.com/api/v3/stock-price-change/AAPL?apikey={{apikey}}",
+							"protocol": "https",
+							"host": [
+								"financialmodelingprep",
+								"com"
+							],
+							"path": [
+								"api",
+								"v3",
+								"stock-price-change",
+								"AAPL"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ETF'sHoldings",
+			"item": [
+				{
+					"name": "TitulardelETF",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://financialmodelingprep.com/api/v3/etf-holder/SPY?apikey={{apikey}}",
+							"protocol": "https",
+							"host": [
+								"financialmodelingprep",
+								"com"
+							],
+							"path": [
+								"api",
+								"v3",
+								"etf-holder",
+								"SPY"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TitulardelETFCopy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://financialmodelingprep.com/api/v3/quotes/index?apikey={{apikey}}",
+							"protocol": "https",
+							"host": [
+								"financialmodelingprep",
+								"com"
+							],
+							"path": [
+								"api",
+								"v3",
+								"quotes",
+								"index"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "S&PConstituents",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://financialmodelingprep.com/api/v3/sp500_constituent?apikey={{apikey}}",
+							"protocol": "https",
+							"host": [
+								"financialmodelingprep",
+								"com"
+							],
+							"path": [
+								"api",
+								"v3",
+								"sp500_constituent"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Divisas",
+			"item": [
+				{
+					"name": "PreciosForex",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://financialmodelingprep.com/api/v3/fx?apikey={{apikey}}",
+							"protocol": "https",
+							"host": [
+								"financialmodelingprep",
+								"com"
+							],
+							"path": [
+								"api",
+								"v3",
+								"fx"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListadePares",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://financialmodelingprep.com/api/v3/symbol/available-forex-currency-pairs?apikey={{apikey}}",
+							"protocol": "https",
+							"host": [
+								"financialmodelingprep",
+								"com"
+							],
+							"path": [
+								"api",
+								"v3",
+								"symbol",
+								"available-forex-currency-pairs"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CotizacionCompletadeunPar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://financialmodelingprep.com/api/v3/quote/EURUSD?apikey={{apikey}}",
+							"protocol": "https",
+							"host": [
+								"financialmodelingprep",
+								"com"
+							],
+							"path": [
+								"api",
+								"v3",
+								"quote",
+								"EURUSD"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PrecioPorListadeParesHistorico",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://financialmodelingprep.com/api/v3/historical-price-full/EURUSD?apikey={{apikey}}",
+							"protocol": "https",
+							"host": [
+								"financialmodelingprep",
+								"com"
+							],
+							"path": [
+								"api",
+								"v3",
+								"historical-price-full",
+								"EURUSD"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PrecioPorListadeParesCopy2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://financialmodelingprep.com/api/v3/symbol/available-forex-currency-pairs?apikey={{apikey}}",
+							"protocol": "https",
+							"host": [
+								"financialmodelingprep",
+								"com"
+							],
+							"path": [
+								"api",
+								"v3",
+								"symbol",
+								"available-forex-currency-pairs"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Commodities",
+			"item": [
+				{
+					"name": "List commodities",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://financialmodelingprep.com/api/v3/symbol/available-commodities?apikey={{apikey}}",
+							"protocol": "https",
+							"host": [
+								"financialmodelingprep",
+								"com"
+							],
+							"path": [
+								"api",
+								"v3",
+								"symbol",
+								"available-commodities"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List commodities World",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://financialmodelingprep.com/api/v3/historical-price-full/OUSX?apikey={{apikey}}",
+							"protocol": "https",
+							"host": [
+								"financialmodelingprep",
+								"com"
+							],
+							"path": [
+								"api",
+								"v3",
+								"historical-price-full",
+								"OUSX"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Crypto",
+			"item": [
+				{
+					"name": "CryptocurrenciesList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://financialmodelingprep.com/api/v3/symbol/available-cryptocurrencies?apikey={{apikey}}",
+							"protocol": "https",
+							"host": [
+								"financialmodelingprep",
+								"com"
+							],
+							"path": [
+								"api",
+								"v3",
+								"symbol",
+								"available-cryptocurrencies"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FullQuoteForCrypto",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://financialmodelingprep.com/api/v3/quote/BTCUSD?apikey={{apikey}}",
+							"protocol": "https",
+							"host": [
+								"financialmodelingprep",
+								"com"
+							],
+							"path": [
+								"api",
+								"v3",
+								"quote",
+								"BTCUSD"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PrecioHistoricoPorCripto",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://financialmodelingprep.com/api/v3/historical-price-full//BTCUSD?apikey={{apikey}}",
+							"protocol": "https",
+							"host": [
+								"financialmodelingprep",
+								"com"
+							],
+							"path": [
+								"api",
+								"v3",
+								"historical-price-full",
+								"",
+								"BTCUSD"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Statement AAPL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://financialmodelingprep.com/api/v3/income-statement/AAPL?period=anual&&apikey={{apikey}}",
+					"protocol": "https",
+					"host": [
+						"financialmodelingprep",
+						"com"
+					],
+					"path": [
+						"api",
+						"v3",
+						"income-statement",
+						"AAPL"
+					],
+					"query": [
+						{
+							"key": "period",
+							"value": "anual"
+						},
+						{
+							"key": null,
+							"value": null
+						},
+						{
+							"key": "apikey",
+							"value": "{{apikey}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "apikey",
+			"value": "apikey",
+			"type": "string"
+		}
+	]
+}

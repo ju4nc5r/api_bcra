@@ -65,12 +65,20 @@ class BYMA:
     def api_byma(self):
         url_base = f'https://open.bymadata.com.ar/vanoms-be-core/rest/api/bymadata/free'
         endpoints = create_list(
-                     cedear='cedears',
-                     etf='etf',
-                     acciones_locales='leading-equity',
-                     acciones_globales='general-equity',
-                     indices_byma='index-price',
-                     titulos_publicos='public-bonds')
+             cedear='cedears',
+             etf='etf',
+             acciones_locales='leading-equity',
+             acciones_globales='general-equity',
+             indices_byma='index-price',
+             titulos_publicos='public-bonds'
+        )
 
         return url_base, endpoints
 
+class FMP:
+
+    def api_fmp(self):
+        url_base = f'https://financialmodelingprep.com/api/v3'
+        endpoints = create_list(
+            noticias='fmp'
+        )

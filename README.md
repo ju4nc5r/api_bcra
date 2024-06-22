@@ -54,6 +54,50 @@ Ideas:
     a corto plazo, con las deudas con vencimiento inferior al año.
 
 
-Primeros pasos:
+## Temas por ver 
 
-1. 
+1. Frontera eficiente
+2. Capital Asset Pricing Model CAPM
+3. Portafolio de Markowitz
+4. RSI `indice de fuerza relativa`: Indica si hay precio de sobrecompra
+5. Pruebas de normalidad
+
+
+### Pruebas de Normalidad
+Los contrastes o análisis de normalidad son pruebas estadísticas para determinar si una muestra de datos proviene de una población
+que sigue una distribución normal.
+
+    Test de Kolmogorov-Smirnov.
+
+    Compara la distribución acumulativa de los datos de la muestra con la distribución acumulativa esperada de una distribución normal.
+    Mide la máxima diferencia absoluta entre las dos distribuciones.
+
+    Test de Shapiro-Wilk.
+
+    Evalúa si una muestra proviene de una población normalmente distribuida.
+    Es especialmente eficaz para tamaños de muestra pequeños.
+
+    Test de Anderson-Darling.
+
+    Una versión mejorada de la prueba de Kolmogorov-Smirnov que da más peso a los extremos de la distribución.
+
+    Test de Jarque-Bera.
+
+    Se basa en la asimetría y la curtosis de los datos para determinar la normalidad.
+    Evalúa si la distribución de los datos difiere de una distribución normal en términos de asimetría y curtosis.
+
+#### ¿Cómo analizar los resultados?
+
+#### Uso del Valor p en Pruebas de Hipótesis
+Se establacen las hipótesis nula y alternativa:
+
+Hipótesis nula. Los datos siguen una distribución normal.
+
+Hipótesis alternativa. Los datos no siguen una distribución normal.
+
+ - Si el valor p de la prueba es mayor que el nivel de significancia (por ejemplo, 0.05), no se rechaza la hipótesis nula de normalidad. Esto significa que no hay evidencia suficiente para decir que los datos no provienen de una distribución normal.
+
+
+ - Si el valor p es menor que el nivel de significancia, se rechaza la hipótesis nula de normalidad, lo que sugiere que los datos no provienen de una distribución normal.
+
+
