@@ -59,8 +59,36 @@ Ideas:
 1. Frontera eficiente
 2. Capital Asset Pricing Model CAPM
 3. Portafolio de Markowitz
-4. RSI `indice de fuerza relativa`: Indica si hay precio de sobrecompra
-5. Pruebas de normalidad
+4. RSI `índice de fuerza relativa` 
+5. Probabilidad y estadística
+
+### Teoría de probabilidad y estadística
+
+#### Distribuciones de probabilidad
+La distribución de probabilidad de una variable aleatoria es una función que asigna a cada suceso definido sobre la variable, la probabilidad de que dicho suceso ocurra. La distribución de probabilidad está definida sobre el conjunto de todos los sucesos 
+y cada uno de los sucesos es parte del rango de valores de la variable aleatoria. También puede decirse que tiene una relación estrecha con las distribuciones de frecuencia.
+
+Los momentos en estadística son medidas estadísticas que proporcionan información sobre la forma y la distribución de un conjunto de datos. Hay cuatro momentos principales: la tendencia central, la dispersión, la asimetría y la curtosis.
+
+
+ - **Media aritmética**. Es el promedio de un conjunto de valores de una muestra. Es el primer momento de la distribución de probabilidad y resulta útil ante distribuciones simétricas. 
+
+
+ - **Desviación estándar**. Es la medida de dispersión o varianza de los datos respecto a la media. Es el segundo momento respecto a la media.
+
+
+ - **Oblicuidad (skewness)**. Es la medida de asimetría de una distribución alrededor de su media. Debido a la tercera potencia involucrada en su cálculo, también se le llama tercer momento de la distribución.
+ 
+
+ - **Curtosis**. Mide la agudeza de las colas de la distribución, es decir, la frecuencia y extremidad de los valores extremos (outliers). Es el cuarto momento con respecto a la media.
+
+<br>
+Distribución Normal
+
+En una distribución normal los valores se concentran alrededor de la media y se dispersan simétricamente. La moda, la media y la mediana son iguales en una distribución de este tipo. 
+
+En una distribución normal estándar la media (μ) es 0, la varianza (σ²) es 1, la curtosis es 3 y la oblicuidad
+(skewness) es 0. 
 
 
 ### Pruebas de Normalidad
@@ -89,11 +117,11 @@ que sigue una distribución normal.
 #### ¿Cómo analizar los resultados?
 
 #### Uso del Valor p en Pruebas de Hipótesis
-Se establacen las hipótesis nula y alternativa:
+Se establecen las hipótesis nula y alternativa.
 
-Hipótesis nula. Los datos siguen una distribución normal.
+**Hipótesis nula**. Los datos siguen una distribución normal.
 
-Hipótesis alternativa. Los datos no siguen una distribución normal.
+**Hipótesis alternativa**. Los datos no siguen una distribución normal.
 
  - Si el valor p de la prueba es mayor que el nivel de significancia (por ejemplo, 0.05), no se rechaza la hipótesis nula de normalidad. Esto significa que no hay evidencia suficiente para decir que los datos no provienen de una distribución normal.
 
